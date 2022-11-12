@@ -3,8 +3,8 @@ import React from 'react'
 export default function Footer()
 {
     return (
-        <footer className="page-footer font-small bg-dark darken-3 ">
-  <div className="container">
+        <footer style={{ height: "10%" }}  className="page-footer font-small bg-dark darken-3 ">
+  {/* <div className="container">
     <div className="row">
       <div className="col-md-12 py-5">
         <div className="mb-5 flex-center ">
@@ -34,8 +34,8 @@ export default function Footer()
         </div>
       </div>
     </div>
-  </div>
-  <div className="footer-copyright text-center py-3">
+  </div> */}
+  <div style={{textAlign: "left", marginLeft: "20px", color: "#fff", fontSize: "14px"}} className="footer-copyright py-3">
     © 2020 Copyright:
     <a href="/"> Station-Z.com </a>
   </div>

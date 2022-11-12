@@ -7,7 +7,7 @@ export default function NavBar() {
   const {setsearchInput }= useContext(searchContext)
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand light" to="/">
+      <a style={{fontWeight: "bold", color: "#fff", fontSize: "28px", fontFamily: "Jazz LET"}} class="navbar-brand light" to="/">
         Station - Z
       </a>
       <button
@@ -22,30 +22,8 @@ export default function NavBar() {
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <Link class="nav-link" to="/">
-              Home <span class="sr-only">(current)</span>
-            </Link>
-          </li>
-          <li class="nav-item">
-            <Link class="nav-link" to="/page1">
-              Page 1
-            </Link>
-          </li>
-          <li class="nav-item">
-            <Link class="nav-link" to="/page2">
-              Page 2
-            </Link>
-          </li>
-          <li class="nav-item">
-            <Link class="nav-link" to="/page3">
-              Page 3
-            </Link>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
+      <div style={{justifyContent: "flex-end"}} class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form  class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
             type="search"
