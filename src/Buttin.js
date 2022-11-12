@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Buttin({setsortType}) {
   return (
-    <div>
-        <div className="dropdown">
+    <div style={{height: "45px"}}>
+        <div style={{float: "left", display: "block", marginLeft: "35px"}} className="dropdown">
         <button className="btn btn-secondary dropdown-toggle text-black" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           SortBy
         </button>

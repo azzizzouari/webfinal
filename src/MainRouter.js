@@ -7,6 +7,7 @@ import Page3 from "./Pages/Page3";
 import NavBar from "./NavBar";
 import Footer from "./footera";
 import { searchContext } from "./contexts/searchContext";
+import Cart from "./Pages/Cart";
 
 export default function MainRouter() {
   const [searchInput, setsearchInput] = useState("")
@@ -20,7 +21,7 @@ export default function MainRouter() {
         {/* HEADER */}
         <Routes>
           <Route path="/" element={<Page0 />} />
-          <Route path="/page1" element={<Page1 />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/page2" element={<Page2 />} />
           <Route path="/page3" element={<Page3 />} />
         </Routes>

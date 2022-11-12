@@ -12,7 +12,7 @@ const lista =[
 ]
 
 export default function AllArticles({sortType}) {
-  const { searchInput }= useContext(searchContext)
+  const { searchInput } = useContext(searchContext)
 
   const ASC = (a,b)=>a?.price-b.price
   const DSC = (a,b)=>b?.price-a.price
@@ -23,8 +23,7 @@ export default function AllArticles({sortType}) {
   }
 
   return (
-    <div className="flex justify-center flex-wrap">
-
+      <div className="flex justify-center flex-wrap">
       {lista.sort(sortType? sortTypeStatus[sortType]:(a,b)=>b.name-a.name).filter(e=>(e.name.toLowerCase()).includes(searchInput.toLowerCase())).map((e)=><Cards  img={e.img} name={e.name} detail={e.detail} price={e.price} />)  }
       
     </div>
