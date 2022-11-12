@@ -14,20 +14,20 @@ export default function Carousel () {
         </ol>
         <div className="carousel-inner">
           <div className={`carousel-item ${active === 0 && "active"}`}>
-            <img style={{height: "340px"}} className="d-block w-100" src="https://promotions.newegg.com/nepro/22-1167/1920x660.jpg" alt="First slide" />
+            <img style={{Height: "360px"}} className="d-block w-100" src="https://velocitymicro.com/img/blog/intel-gaming-cpu/intel-cpu-blog-banner.png" alt="First slide" />
           </div>
           <div className={`carousel-item ${active === 1 && "active"}`}>
-            <img style={{height: "340px"}} className="d-block w-100" src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/AMD_Radeon_RX_Nvidia_GeForce_RTX_drdNBC.jpg" alt="Second slide" />
+            <img style={{Height: "360px"}} className="d-block w-100" src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/AMD_Radeon_RX_Nvidia_GeForce_RTX_drdNBC.jpg" alt="Second slide" />
           </div>
           <div className={`carousel-item ${active === 2 && "active"}`}>
-            <img style={{height: "340px"}} className="d-block w-100" src="https://s.yimg.com/os/creatr-uploaded-images/2022-09/11561f40-2fbb-11ed-be37-1b6af72859ed" alt="Third slide" />
+            <img style={{Height: "360px"}} className="d-block w-100" src="https://s.yimg.com/os/creatr-uploaded-images/2022-09/11561f40-2fbb-11ed-be37-1b6af72859ed" alt="Third slide" />
           </div>
         </div>
-        <a onClick={() => { if (active > 0) setActive(active-1) }} className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a onClick={(e) => { e.preventDefault();if (active > 0) setActive(active-1) }} className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true" />
           <span className="sr-only">Previous</span>
         </a>
-        <a onClick={() => { if (active < 2 ) setActive(active+1) }} className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a onClick={(e) => { e.preventDefault();if (active < 2 ) setActive(active+1) }} className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true" />
           <span className="sr-only">Next</span>
         </a>

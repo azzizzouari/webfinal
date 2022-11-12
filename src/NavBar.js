@@ -7,7 +7,7 @@ export default function NavBar() {
   const {setsearchInput }= useContext(searchContext)
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a onClick={()=> navigate("/")} style={{fontWeight: "bold", color: "#fff", fontSize: "28px", fontFamily: "Jazz LET"}} class="navbar-brand light" to="/">
+      <a onClick={()=> navigate("/")} style={{fontWeight: "bold", color: "#f6672c", fontSize: "28px", fontFamily: "cursive"}} class="navbar-brand light" to="/">
         Station - Z
       </a>
       <button
@@ -31,9 +31,6 @@ export default function NavBar() {
             aria-label="Search"
             onChange={(e)=>{setsearchInput(e.target.value)}}
           />
-          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">
-            Search
-          </button>
         </form>
         <button onClick={()=> navigate("/cart")} style={{marginLeft: "15px"}} class="btn btn-outline-warning my-2 my-sm-0">
             Go to Cart
