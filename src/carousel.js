@@ -14,13 +14,13 @@ export default function Carousel () {
         </ol>
         <div className="carousel-inner">
           <div className={`carousel-item ${active === 0 && "active"}`}>
-            <img style={{Height: "360px"}} className="d-block w-100" src="https://velocitymicro.com/img/blog/intel-gaming-cpu/intel-cpu-blog-banner.png" alt="First slide" />
+            <img style={{height: "480px"}} className="d-block w-100" src="https://velocitymicro.com/img/blog/intel-gaming-cpu/intel-cpu-blog-banner.png" alt="First slide" />
           </div>
           <div className={`carousel-item ${active === 1 && "active"}`}>
-            <img style={{Height: "360px"}} className="d-block w-100" src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/AMD_Radeon_RX_Nvidia_GeForce_RTX_drdNBC.jpg" alt="Second slide" />
+            <img style={{height: "480px"}} className="d-block w-100" src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/AMD_Radeon_RX_Nvidia_GeForce_RTX_drdNBC.jpg" alt="Second slide" />
           </div>
           <div className={`carousel-item ${active === 2 && "active"}`}>
-            <img style={{Height: "360px"}} className="d-block w-100" src="https://s.yimg.com/os/creatr-uploaded-images/2022-09/11561f40-2fbb-11ed-be37-1b6af72859ed" alt="Third slide" />
+            <img style={{height: "480px"}} className="d-block w-100" src="https://s.yimg.com/os/creatr-uploaded-images/2022-09/11561f40-2fbb-11ed-be37-1b6af72859ed" alt="Third slide" />
           </div>
         </div>
         <a onClick={(e) => { e.preventDefault();if (active > 0) setActive(active-1) }} className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
