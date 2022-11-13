@@ -7,7 +7,7 @@ export default function Cart() {
   
   return (
     <>
-    <div>jhhfj</div>
+    <div><h2>your cart:</h2></div>
     <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>{cart.map((item) => <Cards remove name={item.name} price={item.price} />)}</div>
     </>    )
 }
