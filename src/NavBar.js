@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a onClick={()=> navigate("/")} style={{fontWeight: "bold", color: "#f6672c", fontSize: "28px", fontFamily: "cursive"}} class="navbar-brand light" to="/">
-        <img src="https://i.postimg.cc/Vk3qD4t5/Capture.png" style={{length:"70px", height:"40px"}}></img>
+      <img style={{height: "50px"}}  src="https://i.postimg.cc/Vk3qD4t5/Capture.png" ></img>
       </a>
       <button
         class="navbar-toggler"
